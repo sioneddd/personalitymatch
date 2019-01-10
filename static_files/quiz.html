@@ -1,0 +1,89 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Personality Match</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+<link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Raleway" rel="stylesheet">
+
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/bootstrap.css">
+
+</head>
+
+<body>
+
+
+<div id="main">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Personality Match</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                            <a class="nav-link" href="/dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item active">
+                            <a class="nav-link" href="quiz.html">Quiz <span class="sr-only">(current)</span></a>
+                    </li>
+                    
+                  </ul>
+                </div>
+              </nav>
+
+              <div id="quizbox">
+              <h1>Personality quiz</h1>
+
+              
+              <form id="quizForm">
+                  <p>I make friends easily</p>
+                    <input type="radio" id="friends" value="true"> True<br> 
+                    <input type="radio" id="friends" value="neither"> Other<br>
+                    <input type="radio" id="friends" value="false"> False
+
+                    <p>I am a creative person</p>
+                    <input type="radio" id="creative" value="true"> True<br> 
+                    <input type="radio" id="creative" value="neither"> Other<br>
+                    <input type="radio" id="creative" value="false"> False
+
+                    <p>I get worried about things easily</p>
+                    <input type="radio" id="worried" value="true"> True<br> 
+                    <input type="radio" id="worried" value="neither"> Other<br>
+                    <input type="radio" id="worried" value="false"> False
+
+                    <p>I love going to parties</p>
+                    <input type="radio" id="q4" value="true"> True<br> 
+                    <input type="radio" id="q4" value="neither"> Other<br>
+                    <input type="radio" id="q4" value="false"> False
+
+                    <p>I prefer variety over routine</p>
+                    <input type="radio" id="q5" value="true"> True<br> 
+                    <input type="radio" id="q5" value="neither"> Other<br>
+                    <input type="radio" id="q5" value="false"> False
+
+                    <p>I love to solve complex problems</p>
+                    <input type="radio" id="q6" value="true"> True<br> 
+                    <input type="radio" id="q6" value="neither"> Other<br>
+                    <input type="radio" id="q6" value="false"> False
+
+                    
+                    <input type="submit" id="quizSubmit" value="Submit">
+              </form>
+              </div>
+  
+</div>
+
+  <script src="script/jquery-3.3.1.min.js"></script>
+  <script src="script/bootstrap.js"></script>
+  <script src="script/script.js"></script>
+</body>
+</html>

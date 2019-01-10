@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Personality Match</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+<link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Raleway" rel="stylesheet">
+
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/bootstrap.css">
+  <link rel="stylesheet" href="style/qunit-2.4.0.css">
+
+
+</head>
+
+<body>
+
+
+<div id="container">
+  <div id="login">
+    <img src="logo.png" id="logo">
+    <form id="loginForm">
+      <p class="smalltext">username</p>
+      <input type="text" id="username"><br>
+      <p class=smalltext>password</p>
+      <input type="password" id="password"><br>
+      <input type="submit" value="Login" name="loginBtn" id="loginBtn">
+    </form>
+    <a href="signup.html">Sign up</a>
+    <div id="pwError"></div>
+  </div>
+  <script>
+      QUnit.test("Login tests",
+    (assert)=>{
+      var username = localStorage.getItem("username");
+  
+      assert.equal(
+        username, "sioned", "check the username is saving to localstorage when logged in as sioned"
+      );
+      QUnit.test( "assert.async() test", function( assert ) {
+    var done = assert.async();
+    var input = $( "#loginBtn" ).focus();
+    setTimeout(function() {
+      assert.equal( document.activeElement, input[0], "Input was focused" );
+      done();
+    });
+  });
+  
+      
+    })
+    </script>
+</div>
+<script src="script/qunit-2.4.0.js"></script>
+  <script src="script/jquery-3.3.1.min.js"></script>
+  
+  <script src="script/bootstrap.js"></script>
+  <script src="script/script.js"></script>
+ 
+</body>
+</html>
