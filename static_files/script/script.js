@@ -7,6 +7,14 @@ console.log(bg);
 
   $("#container").css("background-image", "url(" + bg + ")");
 
+  $(".logout").click(()=>{
+    localStorage.clear();
+    window.location.href = "login.html";
+  });
+
+  if(localStorage.getItem("username") == null){
+    window.location.href = "login.html";
+  }
 
 
   $("#loginBtn").click(() =>{
