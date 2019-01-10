@@ -6,7 +6,12 @@ Colour scheme
 #F6828C - Soft pink
 #F59CA9 - Lightest pink
 */
-
+h1{
+  font-family: "Major Mono Display" !important;
+}
+body{
+  font-family: Raleway !important;
+}
 #container{
   height: 100vh;
   width: 100vw;
@@ -76,6 +81,8 @@ input, textarea{
 #main{
   background-color: #F59CA9;
   padding: 20px;
+  height: 100vh;
+  width: 100vw;
 
 }
 
@@ -142,4 +149,10 @@ input, textarea{
   border-radius: 10px;
   background-color: aliceblue;
   margin: 10px;
+}
+.descbox{
+  padding: 10px;
+  background-color: aliceblue;
+  width: 20vw;
+  margin-top: 10px;
 }

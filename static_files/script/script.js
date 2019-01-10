@@ -70,7 +70,7 @@ console.log(bg);
       desc: desc
     };
 
-    
+
     $.ajax({
       url: "./signup/",
       method: "POST",
@@ -94,7 +94,7 @@ console.log(bg);
     }) 
 
   })
-
+ 
   $("#matches").ready(() => {
     const username = localStorage.getItem("username");
     $.ajax({
@@ -116,7 +116,7 @@ console.log(bg);
          ;
           var userID = event.target.id;
           localStorage.setItem("userID", userID);
-        
+        console.log("User profile ID: " +userID);
          window.location.href = "/user.html";  
         
         })
