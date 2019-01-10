@@ -49,7 +49,7 @@ app.post("/uCheck", (req, res) => {
 })
 
 app.post("/signup", (req, res) => {
-  db.run(
+  db.all(
     
     'INSERT INTO users(username, password, age, image, desc) VALUES($username, $password, $age, $image, $desc)',
     {

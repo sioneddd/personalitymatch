@@ -69,6 +69,7 @@ console.log(bg);
       image: image,
       desc: desc
     };
+    
     $.ajax({
       url: "./signup/",
       method: "POST",
